@@ -10,9 +10,11 @@ export default {
     ios: {
       supportsTablet: true,
       bundleIdentifier: "eugenechevski.reactchatter",
+      googleServicesFile:
+        process.env.GOOGLE_SERVICES_PLIST,
     },
     android: {
-      package: "eugenechevski.reactchatter"
+      package: "eugenechevski.reactchatter",
     },
     web: {
       favicon: "./assets/images/logo.png",
@@ -20,8 +22,19 @@ export default {
     owner: "eugenechevski",
     extra: {
       eas: {
-        projectId: "4642cea0-c9d7-4073-9b4f-8f3efaec2697"
-      }
-    }
+        projectId: "4642cea0-c9d7-4073-9b4f-8f3efaec2697",
+      },
+    },
+    plugins: [
+      "@react-native-firebase/app",
+      [
+        "expo-build-properties",
+        {
+          ios: {
+            useFrameworks: "static",
+          },
+        },
+      ],
+    ],
   },
 };

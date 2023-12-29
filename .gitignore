@@ -39,3 +39,5 @@ android/
 
 # iOS
 ios/
+GoogleService-Info.plist
+
