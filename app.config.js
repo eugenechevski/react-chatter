@@ -17,6 +17,7 @@ export default {
       package: "eugenechevski.reactchatter",
     },
     web: {
+      bundler: "metro",
       favicon: "./assets/images/logo.png",
     },
     owner: "eugenechevski",
@@ -35,6 +36,8 @@ export default {
           },
         },
       ],
+      "expo-router"
     ],
+    scheme: "reactchatter"
   },
 };
