@@ -14,6 +14,7 @@ export default {
     },
     android: {
       package: "eugenechevski.reactchatter",
+      googleServicesFile: process.env.GOOGLE_SERVICES_JSON,
     },
     web: {
       bundler: "metro",
