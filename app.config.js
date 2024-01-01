@@ -10,8 +10,7 @@ export default {
     ios: {
       supportsTablet: true,
       bundleIdentifier: "eugenechevski.reactchatter",
-      googleServicesFile:
-        process.env.GOOGLE_SERVICES_PLIST,
+      googleServicesFile: process.env.GOOGLE_SERVICES_PLIST,
     },
     android: {
       package: "eugenechevski.reactchatter",
@@ -36,8 +35,11 @@ export default {
           },
         },
       ],
-      "expo-router"
+      "expo-router",
     ],
-    scheme: "reactchatter"
+    scheme: "reactchatter",
+    experiments: {
+      tsconfigPaths: true,
+    },
   },
 };
