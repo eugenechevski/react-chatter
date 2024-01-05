@@ -40,7 +40,10 @@ android/
 
 # iOS
 ios/
+
+# Firebase
 GoogleService-Info.plist
+google-services.json
 
 # Other
 dev.md
